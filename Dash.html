@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🚗 Vehicle Analytics Dashboard</h1>
+
+    <div class="container">
+        <div class="analytics-section">
+            <h2>Live Parameters</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Speed (km/h)</h3>
+                    <canvas id="speedChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>RPM</h3>
+                    <canvas id="rpmChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Engine Temperature (°C)</h3>
+                    <canvas id="tempChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Fuel Level (%)</h3>
+                    <canvas id="fuelChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <h2>📹 Live Video Feed</h2>
+            <div class="video-container">
+                <img src="http://localhost:8443/video_feed" width="960" height="540">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
